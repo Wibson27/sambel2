@@ -1,0 +1,20 @@
+.profile {
+    -fx-background-image: url("image/fotoFormal-modified.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-border-color: #f7e9de;
+    -fx-border-width: 2.5px;
+}
+
+.project1 {
+    -fx-background-image: url("image/gelapin.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.shadow{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.2, 0, 2);
+}

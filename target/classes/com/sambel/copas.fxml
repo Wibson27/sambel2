@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5000.0" prefWidth="800.0" stylesheets="@../project.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sambel.projectController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="128.0" prefWidth="800.0" spacing="17.0" style="-fx-background-color: #B54E4A;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToHome" style="-fx-background-color: transparent;" text="ForFunds" textFill="#f7e9de">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="32.0" />
+               </font>
+            </Button>
+            <Pane maxHeight="-Infinity" opacity="0.8" prefHeight="42.0" prefWidth="1.5" style="-fx-background-color: #F7E9DE;" />
+            <Button mnemonicParsing="false" onAction="#switchToExplore" style="-fx-background-color: transparent;" text="Explore" textFill="#f7e9de">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefWidth="160.0" style="-fx-background-color: #F7E9DE; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField prefHeight="34.0" prefWidth="160.0" promptText="Search crowdfunding..." style="-fx-background-color: transparent; -fx-background-radius: 10;" HBox.hgrow="ALWAYS" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/search-line.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#switchToProfile" style="-fx-background-color: transparent;" text="Rifqi Wibisono" textFill="#f7e9de">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane maxHeight="-Infinity" onMouseClicked="#switchToProfile" prefHeight="60.0" prefWidth="60.0" styleClass="profile">
+               <HBox.margin>
+                  <Insets left="-8.0" />
+               </HBox.margin>
+            </Pane>
+            <Button mnemonicParsing="false" onAction="#switchToFormulir" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #C57D75; -fx-border-color: #ffffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 1.5;" styleClass="shadow" text="Start Project" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="7.0" right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="566.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="364.0" prefWidth="800.0" style="-fx-background-color: #F7E9DE;">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="329.0" prefWidth="110.0" styleClass="project1" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="30.0" right="30.0" top="30.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="364.0" prefWidth="173.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Funding">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Pelestarian Penyu">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="73.0" prefWidth="400.0">
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/fotoFormal-modified.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="7.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Rifqi Wibisono">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="15.0" />
+                                       </VBox.margin></Label>
+                                    <HBox maxWidth="-Infinity" spacing="20.0">
+                                       <children>
+                                          <Label text="1 Campaign">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin></Label>
+                                          <Label layoutX="10.0" layoutY="10.0" text="Yogyakarta, Indonesia" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="15.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="400.0" spacing="5.0">
+                           <children>
+                              <Label text="IDR 50.000,00">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                              <Pane prefHeight="30.0" prefWidth="125.0" HBox.hgrow="ALWAYS" />
+                              <Label text="50">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Donators">
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox maxHeight="-Infinity" prefHeight="22.0" prefWidth="386.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffbe98;" HBox.hgrow="ALWAYS" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;" HBox.hgrow="ALWAYS" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="180.0" prefHeight="30.0" prefWidth="400.0" spacing="5.0">
+                           <children>
+                              <Label prefHeight="19.0" prefWidth="178.0" text="50% of Flexible Goal">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                              <Label text="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="20.0" prefWidth="106.0" text="days left">
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#switchToRewardPack" prefHeight="60.0" prefWidth="127.0" style="-fx-background-color: #C57D75; -fx-border-color: #ffffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;" styleClass="shadow" text="Reward Packs" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="25.0" layoutY="30.0" mnemonicParsing="false" onAction="#switchToDonation" prefHeight="60.0" prefWidth="127.0" style="-fx-background-color: #ffffff; -fx-border-color: #C57D75; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 3;" styleClass="shadow" text="Donate" textFill="#c57d75">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" top="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="1139.0" prefWidth="800.0" style="-fx-background-color: #c57d75;">
+               <children>
+                  <VBox prefHeight="316.0" prefWidth="194.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="467.0" spacing="30.0" style="-fx-border-color: transparent transparent  #ffffff transparent; -fx-border-width: 0 0 2px 0;">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: transparent transparent  #ffffff transparent; -fx-border-width: 0 0 2px 0;">
+                                 <children>
+                                    <Label text="Story" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="-1.5" />
+                                 </HBox.margin>
+                              </VBox>
+                              <Label text="Updates" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="-15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="Comments" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" right="25.0" top="7.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="1119.0" prefWidth="438.0" spacing="15.0">
+                     <children>
+                        <Label text="Choose Your Packs" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="15.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane prefHeight="316.0" prefWidth="321.0" style="-fx-background-color: #c57d75;">
+                           <content>
+                              <VBox alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1038.0" prefWidth="433.0" spacing="20.0" style="-fx-background-color: #c57d75;">
+                                 <children>
+                                    <VBox prefHeight="294.0" prefWidth="378.0" spacing="3.0" styleClass="shadow">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Pane prefHeight="132.0" prefWidth="287.0" styleClass="reward1" VBox.vgrow="ALWAYS" />
+                                          <Label text="Some Flowers" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="142.0" text="IDR 10.000,00" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="160.0" text="Estimated Shipping" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="177.0" text="January 9999" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="195.0" text="0 claimed" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="25.0" layoutY="10.0" prefHeight="294.0" prefWidth="296.0" spacing="3.0" styleClass="shadow">
+                                       <children>
+                                          <Pane prefHeight="132.0" prefWidth="287.0" styleClass="reward1" VBox.vgrow="ALWAYS" />
+                                          <Label text="Some Flowers" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="142.0" text="IDR 10.000,00" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="160.0" text="Estimated Shipping" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="177.0" text="January 9999" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="195.0" text="0 claimed" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="324.0" prefHeight="294.0" prefWidth="296.0" spacing="3.0" styleClass="shadow">
+                                       <children>
+                                          <Pane prefHeight="132.0" prefWidth="287.0" styleClass="reward1" VBox.vgrow="ALWAYS" />
+                                          <Label text="Some Flowers" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="142.0" text="IDR 10.000,00" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="160.0" text="Estimated Shipping" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="177.0" text="January 9999" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="195.0" text="0 claimed" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets left="7.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                        </ScrollPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

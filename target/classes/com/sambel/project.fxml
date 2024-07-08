@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../project.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sambel.projectController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="128.0" prefWidth="800.0" spacing="17.0" style="-fx-background-color: #B54E4A;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToHome" style="-fx-background-color: transparent;" text="ForFunds" textFill="#f7e9de">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="32.0" />
+               </font>
+            </Button>
+            <Pane maxHeight="-Infinity" opacity="0.8" prefHeight="42.0" prefWidth="1.5" style="-fx-background-color: #F7E9DE;" />
+            <Button mnemonicParsing="false" onAction="#switchToExplore" style="-fx-background-color: transparent;" text="Explore" textFill="#f7e9de">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefWidth="160.0" style="-fx-background-color: #F7E9DE; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField prefHeight="34.0" prefWidth="160.0" promptText="Search crowdfunding..." style="-fx-background-color: transparent; -fx-background-radius: 10;" HBox.hgrow="ALWAYS" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/search-line.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#switchToProfile" style="-fx-background-color: transparent;" text="Rifqi Wibisono" textFill="#f7e9de">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane maxHeight="-Infinity" onMouseClicked="#switchToProfile" prefHeight="60.0" prefWidth="60.0" styleClass="profile">
+               <HBox.margin>
+                  <Insets left="-8.0" />
+               </HBox.margin>
+            </Pane>
+            <Button mnemonicParsing="false" onAction="#switchToFormulir" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #C57D75; -fx-border-color: #ffffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 1.5;" styleClass="shadow" text="Start Project" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="7.0" right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+        <!-- This will be replaced with the project details when a project is clicked -->
+        <fx:include fx:id="contentArea" source="ProjectDetails.fxml"/>
+    </center>
+</BorderPane>

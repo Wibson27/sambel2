@@ -1,0 +1,26 @@
+.project2 {
+    -fx-background-image: url("image/kartu.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+/* styles.css */
+.image-view {
+    -fx-opacity: 0.9; /* Sedikit transparan untuk gambar */
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #c57d75, #e3aba1); /* Gradasi warna */
+}
+
+.upload-button {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #c57d75, #e3aba1); 
+    -fx-text-fill: #ffffff; 
+    -fx-font-size: 14px;
+    -fx-opacity: 0.8; /* Sedikit transparan untuk tombol */
+}
+
+.upload-button:hover {
+    -fx-opacity: 1.0; /* Penuh opasitas saat dihover */
+}
+
+
+
+ 

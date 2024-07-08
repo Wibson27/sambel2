@@ -1,0 +1,8 @@
+.Shippingaddress{
+    fx-background-color: #f5f5f5;
+    fx-bacground-radius: 30%;
+}
+
+.imagebg{
+    -fx-background-image: url("image/bgLogin.png")
+}

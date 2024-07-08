@@ -1,0 +1,22 @@
+.profile {
+    -fx-background-image: url("image/fotoFormal-modified.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-border-color: #b54e4a;
+    -fx-border-width: 2.5px;
+}
+
+.emptyPage {
+    -fx-background-image: url("image/emptyPage.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.smoothPane {
+    -fx-background-color: transparent; 
+    -fx-border-color: transparent; 
+    -fx-border-width: 0; 
+    -fx-padding: 0; 
+}

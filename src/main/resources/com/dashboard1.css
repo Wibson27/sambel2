@@ -1,0 +1,25 @@
+.profile {
+    -fx-background-image: url("image/fotoFormal-modified.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-border-color: #b54e4a;
+    -fx-border-width: 2.5px;
+}
+
+.profile2 {
+    -fx-background-image: url("image/user.png");
+    /* -fx-background-size: cover; */
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color:  #f7e9de;
+    -fx-background-radius: 20px; 
+    -fx-border-radius: 20px; 
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0.2, 0, 2);
+}
+
+.shadow{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.2, 0, 2);
+}

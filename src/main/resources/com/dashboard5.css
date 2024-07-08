@@ -1,0 +1,9 @@
+.profile {
+    -fx-background-image: url("image/fotoFormal-modified.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-border-color: #b54e4a;
+    -fx-border-width: 2.5px;
+}

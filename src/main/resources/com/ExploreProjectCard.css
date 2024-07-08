@@ -1,0 +1,24 @@
+.explore-project-card {
+    -fx-background-color: #b54e4a;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+
+.project-image {
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.project-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.project-funding {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+}

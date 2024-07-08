@@ -1,0 +1,12 @@
+.shadow{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.2, 0, 2);
+}
+
+.tab-pane {
+    -fx-background-color: #f7e9de;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color:  #B54E4A;
+}
+
